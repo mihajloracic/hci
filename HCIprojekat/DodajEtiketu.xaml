@@ -1,0 +1,20 @@
+﻿<Window x:Class="HCIprojekat.DodajEtiketu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCIprojekat"
+        mc:Ignorable="d"
+        Title="DodajEtiketu" Height="467" Width="300">
+    <Grid Margin="0,0,38,0">
+        <Label x:Name="labelIdVrste" Content="Boja:" HorizontalAlignment="Left" Height="30" Margin="20,30,0,0" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="textBoxBoja" HorizontalAlignment="Left" Height="25" Margin="20,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" ToolTip="Unesite ime vrste koju hocete da dodate"/>
+        <Label x:Name="labelOpisVrste" Content="Naziv etikete:" HorizontalAlignment="Left" Height="30" Margin="15,95,0,0" VerticalAlignment="Top" Width="108"/>
+        <TextBox x:Name="textBoxNaziv" HorizontalAlignment="Left" Height="50" Margin="15,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" ToolTip="Unesite ime vrste koju hocete da dodate"/>
+        <Button x:Name="button1" Content="Submit" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="65" Click="button1_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,275,-36,0" VerticalAlignment="Top" Height="161" Width="290" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Button x:Name="buttonDelete" Content="Izbrisi" HorizontalAlignment="Left" Margin="100,225,0,0" VerticalAlignment="Top" Width="75" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonCancel" Content="Ponisti" HorizontalAlignment="Left" Margin="200,225,-21,0" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click"/>
+
+    </Grid>
+</Window>

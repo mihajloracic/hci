@@ -1,0 +1,18 @@
+﻿<Window x:Class="HCIprojekat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCIprojekat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="buttonAddVrsta" Content="Dodaj novu vrstu" HorizontalAlignment="Left" Margin="360,25,0,0" VerticalAlignment="Top" Width="115" Click="buttonAddVrsta_Click"/>
+        <Button x:Name="button1" Content="Dodaj tip" HorizontalAlignment="Left" Margin="202,25,0,0" VerticalAlignment="Top" Width="138" Click="button1_Click"/>
+        <Button x:Name="buttonEtiketa" Content="Dodaj etiketu" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Width="138" Click="buttonEtiketa_Click"/>
+        <Image   x:Name="image" HorizontalAlignment="Stretch" Height="239" Margin="10,80,10,0" VerticalAlignment="Top" Width="Auto" IsEnabled="False">
+            
+        </Image>
+
+    </Grid>
+</Window>

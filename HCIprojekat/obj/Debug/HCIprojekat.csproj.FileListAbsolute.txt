@@ -1,0 +1,59 @@
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.exe.config
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.exe
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.pdb
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.csprojResolveAssemblyReference.cache
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\FormVrsta.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\MainWindow.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\App.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat_MarkupCompile.cache
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat_MarkupCompile.lref
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\FormVrsta.baml
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\MainWindow.baml
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.g.resources
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.Properties.Resources.resources
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.csproj.GenerateResource.Cache
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.exe
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.pdb
+C:\Users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\DodajTip.g.cs
+C:\Users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketu.baml
+C:\Users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Debug\DodajTip.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.exe.config
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.exe
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.pdb
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.exe
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\HCIprojekat.pdb
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\MySql.Data.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\MySql.Data.xml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.csprojResolveAssemblyReference.cache
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajTip.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\FormVrsta.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\MainWindow.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\App.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat_MarkupCompile.cache
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat_MarkupCompile.lref
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketu.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajTip.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\FormVrsta.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\MainWindow.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.g.resources
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.Properties.Resources.resources
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\HCIprojekat.csproj.GenerateResource.Cache
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hciDataSet" targetNamespace="http://tempuri.org/hciDataSet.xsd" xmlns:mstns="http://tempuri.org/hciDataSet.xsd" xmlns="http://tempuri.org/hciDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hciConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hciConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.HCIprojekat.Properties.Settings.GlobalReference.Default.hciConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vrstaTableAdapter" GeneratorDataComponentClassName="vrstaTableAdapter" Name="vrsta" UserDataComponentName="vrstaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hciConnectionString (Settings)" DbObjectName="hci.vrsta" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `idvrsta`, `naziv`, `opis`, `tip_vrste`, `status_ugrozenosti`, `turisticki_prihod` FROM `vrsta`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hciDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hciDataSet" msprop:Generator_UserDSName="hciDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vrsta" msprop:Generator_TableClassName="vrstaDataTable" msprop:Generator_TableVarName="tablevrsta" msprop:Generator_TablePropName="vrsta" msprop:Generator_RowDeletingName="vrstaRowDeleting" msprop:Generator_RowChangingName="vrstaRowChanging" msprop:Generator_RowEvHandlerName="vrstaRowChangeEventHandler" msprop:Generator_RowDeletedName="vrstaRowDeleted" msprop:Generator_UserTableName="vrsta" msprop:Generator_RowChangedName="vrstaRowChanged" msprop:Generator_RowEvArgName="vrstaRowChangeEvent" msprop:Generator_RowClassName="vrstaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

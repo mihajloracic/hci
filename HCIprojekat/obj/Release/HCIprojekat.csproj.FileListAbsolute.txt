@@ -1,0 +1,37 @@
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.exe.config
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.exe
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.pdb
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\FormVrsta.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\MainWindow.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\App.g.cs
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat_MarkupCompile.cache
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat_MarkupCompile.lref
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\FormVrsta.baml
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\MainWindow.baml
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.g.resources
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.Properties.Resources.resources
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.csproj.GenerateResource.Cache
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.exe
+c:\users\mihajlo\documents\visual studio 2015\Projects\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.pdb
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.exe.config
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.exe
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.pdb
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.exe
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Release\HCIprojekat.pdb
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Release\MySql.Data.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Release\MySql.Data.xml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\DodajEtiketu.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\DodajTip.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\FormVrsta.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\MainWindow.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\App.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat_MarkupCompile.cache
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat_MarkupCompile.lref
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\DodajEtiketu.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\DodajTip.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\FormVrsta.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\MainWindow.baml
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.g.resources
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.Properties.Resources.resources
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Release\HCIprojekat.csproj.GenerateResource.Cache
