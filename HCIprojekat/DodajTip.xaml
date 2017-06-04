@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCIprojekat"
         mc:Ignorable="d"
-        Title="DodajTip" Height="300" Width="409">
-    <Grid>
+        Title="DodajTip" Height="600" Width="800">
+    <Grid Width="800" Height="600">
         <Label x:Name="labelImeVrste" Content="Ime tipa:" HorizontalAlignment="Left" Height="30" Margin="15,10,0,0" VerticalAlignment="Top" Width="53"/>
-        <TextBox  x:Name="textBoxIme" HorizontalAlignment="Left" Height="25" Margin="15,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" ToolTip="Unesite ime vrste koju hocete da dodate"/>
-        <Label x:Name="labelOpisVrste" Content="Opis tipa:" HorizontalAlignment="Left" Height="30" Margin="15,95,0,0" VerticalAlignment="Top" Width="125"/>
-        <TextBox x:Name="textBoxOpis" HorizontalAlignment="Left" Height="25" Margin="15,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59" ToolTip="Unesite ime vrste koju hocete da dodate"/>
-        <Label x:Name="label1" Content="Ikonica:" HorizontalAlignment="Left" Margin="148,10,0,0" VerticalAlignment="Top" Width="77"/>
-        <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="310,21,0,0" VerticalAlignment="Top" Width="47" Click="button_Click"/>
-        <Button x:Name="button1" Content="Submit" HorizontalAlignment="Left" Margin="310,130,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
-        <DataGrid ItemsSource="{Binding}" x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.917,-1.154" Width="401" Height="104" SelectionChanged="dataGrid_SelectionChanged"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="49" Margin="148,41,0,0" VerticalAlignment="Top" Width="157"/>
-        <Button x:Name="buttonDelete" Content="Izbrisi" HorizontalAlignment="Left" Margin="215,130,0,0" VerticalAlignment="Top" Width="75" Click="buttonDelete_Click"/>
-        <Button x:Name="buttonCancel" Content="Ponisti" HorizontalAlignment="Left" Margin="127,130,0,0" VerticalAlignment="Top" Width="68" Click="buttonCancel_Click"/>
+        <TextBox  x:Name="textBoxIme" HorizontalAlignment="Left" Height="25" Margin="15,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" ToolTip="Unesite ime vrste koju hocete da dodate"/>
+        <Label x:Name="labelOpisVrste" Content="Opis tipa:" HorizontalAlignment="Left" Height="30" Margin="15,65,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="textBoxOpis" HorizontalAlignment="Left" Height="101" Margin="15,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" ToolTip="Unesite ime vrste koju hocete da dodate"/>
+        <Label x:Name="label1" Content="Ikonica:" HorizontalAlignment="Left" Margin="468,42,0,0" VerticalAlignment="Top" Width="77"/>
+        <Button x:Name="button" Content="Browse" HorizontalAlignment="Left" Margin="550,48,0,0" VerticalAlignment="Top" Width="139" Click="button_Click" Height="33"/>
+        <Button x:Name="button1" Content="Submit" HorizontalAlignment="Left" Margin="373,219,0,0" VerticalAlignment="Top" Width="112" Click="button1_Click" Height="64"/>
+        <DataGrid ItemsSource="{Binding}" x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,366,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.917,-1.154" Width="790" Height="202" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="101" Margin="449,100,0,0" VerticalAlignment="Top" Width="322"/>
+        <Button x:Name="buttonDelete" Content="Izbrisi" HorizontalAlignment="Left" Margin="236,219,0,0" VerticalAlignment="Top" Width="103" Click="buttonDelete_Click" Height="64"/>
+        <Button x:Name="buttonCancel" Content="Ponisti" HorizontalAlignment="Left" Margin="98,219,0,0" VerticalAlignment="Top" Width="108" Click="buttonCancel_Click" Height="64"/>
 
     </Grid>
 </Window>

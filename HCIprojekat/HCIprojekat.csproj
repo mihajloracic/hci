@@ -43,6 +43,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -85,6 +86,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="DodajEtiketaVrsta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DodajEtiketu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -106,9 +111,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="dao\EtiketaDao.cs" />
+    <Compile Include="dao\EtiketaVrstaDao.cs" />
     <Compile Include="dao\TipVrstaDao.cs" />
+    <Compile Include="DodajEtiketaVrsta.xaml.cs">
+      <DependentUpon>DodajEtiketaVrsta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="model\Etiketa.cs" />
+    <Compile Include="model\EtiketaVrsta.cs" />
     <Compile Include="model\TipVrsta.cs" />
+    <Compile Include="dao\VrstaDao.cs" />
+    <Compile Include="model\Vrsta.cs" />
     <Compile Include="StringToDoubleValidationRule.cs" />
     <Compile Include="DodajEtiketu.xaml.cs">
       <DependentUpon>DodajEtiketu.xaml</DependentUpon>

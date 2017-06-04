@@ -5,14 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCIprojekat"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        <Button x:Name="buttonAddVrsta" Content="Dodaj novu vrstu" HorizontalAlignment="Left" Margin="360,25,0,0" VerticalAlignment="Top" Width="115" Click="buttonAddVrsta_Click"/>
-        <Button x:Name="button1" Content="Dodaj tip" HorizontalAlignment="Left" Margin="202,25,0,0" VerticalAlignment="Top" Width="138" Click="button1_Click"/>
-        <Button x:Name="buttonEtiketa" Content="Dodaj etiketu" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top" Width="138" Click="buttonEtiketa_Click"/>
-        <Image   x:Name="image" HorizontalAlignment="Stretch" Height="239" Margin="10,80,10,0" VerticalAlignment="Top" Width="Auto" IsEnabled="False">
-            
-        </Image>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem x:Name="menuItemEtiketa"  Header="_Etiketa" Click="MenuItem_Click" />
+                    <MenuItem x:Name="menuItemVrsta" Header="_Vrsta" Click="menuItemVrsta_Click" />
+                    <MenuItem x:Name="menuItemTipVrsta" Header="_Tip vrste" Click="menuItemVrsta1_Click" />
+                    <MenuItem x:Name="menuItemEtiketaVrsta" Header="_Etiketa - Vrsta" Click="menuItemEtiketaVrsta_Click" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+
+            </Menu>
+
+        </DockPanel>
+        <Canvas HorizontalAlignment="Left" ClipToBounds="True" Name="mapa" Height="544" Margin="0,25,0,0" VerticalAlignment="Top" Width="782" AllowDrop="True" MouseLeftButtonDown="mapa_MouseLeftButtonDown" MouseLeftButtonUp="mapa_MouseLeftButtonUp" MouseMove="mapa_MouseMove">
+            <Canvas.Background>
+                <ImageBrush ImageSource="file:///C:/Users/mihajlo/Desktop/HCIprojekat/pictures/Simple_world_map.svg.png" />
+            </Canvas.Background>
+        </Canvas>
 
     </Grid>
 </Window>

@@ -5,32 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HCIprojekat"
         mc:Ignorable="d"
-        Title="Dodavanje nove vrste" Height="570" Width="450">
+        Title="Dodavanje nove vrste" Height="600" Width="800">
     <Grid Margin="0,10,2,0">
         <Grid.RowDefinitions>
             <RowDefinition Height="130*"/>
             <RowDefinition Height="139*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="125*"/>
-            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="30*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="labelImeVrste" Content="Ime vrste:" HorizontalAlignment="Left" Height="30" Margin="15,10,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="25" Margin="15,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" ToolTip="Unesite ime vrste koju hocete da dodate" AutomationProperties.IsRequiredForForm="True"/>
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="25" Margin="15,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" ToolTip="Unesite ime vrste koju hocete da dodate" AutomationProperties.IsRequiredForForm="True"/>
         <Label x:Name="labelOpisVrste" Content="Opis vrste:" HorizontalAlignment="Left" Height="30" Margin="10,72,0,0" VerticalAlignment="Top" Width="85"/>
-        <TextBox x:Name="textBoxOpis" HorizontalAlignment="Left" Height="25" Margin="17,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" ToolTip="Unesite ime vrste koju hocete da dodate"/>
-        <Label x:Name="label_Copy2" Content="Tip vrste:" HorizontalAlignment="Left" Height="30" Margin="15,180,0,0" VerticalAlignment="Top" Width="85"/>
-        <ComboBox x:Name="comboBoxTip" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="15,210,0,0" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" SelectionChanged="comboBoxTip_SelectionChanged">
+        <TextBox x:Name="textBoxOpis" HorizontalAlignment="Left" Height="25" Margin="17,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" ToolTip="Unesite ime vrste koju hocete da dodate" TextChanged="textBoxOpis_TextChanged"/>
+        <Label x:Name="label_Copy2" Content="Tip vrste:" HorizontalAlignment="Left" Height="30" Margin="21,133,0,0" VerticalAlignment="Top" Width="85"/>
+        <ComboBox x:Name="comboBoxTip" HorizontalAlignment="Left" Margin="21,163,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="comboBoxTip_SelectionChanged">
             <Button/>
         </ComboBox>
-        <Label x:Name="label" Content="Status ugrozenosti" HorizontalAlignment="Left" Margin="17,245,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
-        <ComboBox x:Name="comboBoxStatus" HorizontalAlignment="Left" Margin="15,25,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectedIndex="1">
+        <Label x:Name="label" Content="Status ugrozenosti" HorizontalAlignment="Left" Margin="23,198,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxStatus" HorizontalAlignment="Left" Margin="21,248,0,0" VerticalAlignment="Top" Width="198" SelectedIndex="1">
             <ComboBoxItem Content="ugrozena"/>
             <ComboBoxItem Content="srednje ugrozena"/>
             <ComboBoxItem Content="ne ugrozena"/>
         </ComboBox>
         <Label x:Name="label1" Content="Ikonica:" Grid.Column="1" HorizontalAlignment="Left" Margin="47,130,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Browse" Grid.Column="1" HorizontalAlignment="Left" Margin="122,136,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.533,-2.8" Click="button_Click"/>
+        <Button x:Name="button" Content="Traži sliku" Grid.Column="1" HorizontalAlignment="Left" Margin="122,136,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.533,-2.8" Click="button_Click"/>
         <Label x:Name="label2" Content="Opasna:" Grid.Column="1" HorizontalAlignment="Left" Margin="47,14,0,0" VerticalAlignment="Top"/>
         <RadioButton GroupName="opasna" x:Name="radioButtonOpasnaTrue" Content="Da" Grid.Column="1" HorizontalAlignment="Left" Margin="56,50,0,0" VerticalAlignment="Top" Checked="radioButtonOpasnaTrue_Checked"/>
         <RadioButton GroupName="opasna" x:Name="radioButton1OpasnaFalse" Content="Ne" Grid.Column="1" HorizontalAlignment="Left" Margin="107,50,0,0" VerticalAlignment="Top"/>
@@ -47,13 +49,13 @@
             </RadioButton.RenderTransform>
         </RadioButton>
         <Label x:Name="label5" Content="Turisticki status:" Grid.Column="1" HorizontalAlignment="Left" Margin="51,14,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBoxTuristickiStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="51,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectedIndex="1">
+        <ComboBox x:Name="comboBoxTuristickiStatus" Grid.Column="1" HorizontalAlignment="Left" Margin="51,40,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectedIndex="1" Grid.ColumnSpan="2">
             <ComboBoxItem Content="izolovana"/>
             <ComboBoxItem Content="habituirana"/>
             <ComboBoxItem Content="delimicno habituirana"/>
         </ComboBox>
-        <Label x:Name="label6" Content="Turisticki prihod" HorizontalAlignment="Left" Margin="17,60,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxPrihod" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="17,86,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="120" Grid.Row="1">
+        <Label x:Name="label6" Content="Turisticki prihod" HorizontalAlignment="Left" Margin="23,13,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxPrihod" TextAlignment="Right" HorizontalAlignment="Left" Height="23" Margin="23,39,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="196" Grid.Row="1">
             <TextBox.Text>
                 <Binding Path="Cena" UpdateSourceTrigger="PropertyChanged">
                     <Binding.ValidationRules>
@@ -63,10 +65,19 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
-        <Button x:Name="buttonSubmit" Content="Dodaj vrstu" Grid.Column="1" HorizontalAlignment="Left" Margin="61,91,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonSubmit_Click"/>
-        <DataGrid IsReadOnly="True" SelectionUnit="FullRow" ItemsSource="{Binding}" x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,119,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="144" Width="430"/>
-        <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="85" Margin="36,180,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="196"/>
-        <Button x:Name="buttonDelete" Content="Delete selected item" Grid.Column="1" HorizontalAlignment="Left" Margin="157,91,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonSubmit" Content="Izvrši izeme" Grid.Column="1" HorizontalAlignment="Left" Margin="223.455,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonSubmit_Click" Grid.ColumnSpan="2"/>
+        <DataGrid IsReadOnly="True" SelectionUnit="FullRow" ItemsSource="{Binding}" x:Name="dataGrid" HorizontalAlignment="Left" Margin="0,145,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="4" Height="144" Width="790" SelectionChanged="dataGrid_SelectionChanged"/>
+        <Image x:Name="image" Grid.Column="1" HorizontalAlignment="Left" Height="85" Margin="56,175,0,0" VerticalAlignment="Top" Width="196"/>
+        <Button x:Name="buttonDelete" Content="Izbriši" Grid.Column="2" HorizontalAlignment="Left" Margin="46.409,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonDelete_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="buttonCancel" Content="Poništi" HorizontalAlignment="Left" Margin="122.455,105,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="buttonCancel_Click" Grid.Column="1"/>
+        <CheckBox x:Name="checkboxUseParent" Content="slika" Grid.Column="1" HorizontalAlignment="Left" Margin="223,141,0,0" VerticalAlignment="Top" ToolTip="Čekirajte ukolike želite da koristi nasleđenu sliku iz tpa vrste"/>
+        <TextBox x:Name="textBoxSearch" HorizontalAlignment="Left" Height="23" Margin="23,105,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="134" ToolTip="Polje za pretragu"/>
+        <CheckBox x:Name="checkBoxOpasna" Content="Opasna da" HorizontalAlignment="Left" Margin="162,96,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxOpasnaFalse" Content="Opasna ne" HorizontalAlignment="Left" Margin="257,96,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxIucnTrue" Content="Iucn da" HorizontalAlignment="Left" Margin="162,119,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxIucnFalse" Content="Iucn ne" HorizontalAlignment="Left" Margin="257,119,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="buttonSearch" Content="Pretraži" Grid.Column="1" HorizontalAlignment="Left" Margin="10.455,104,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Pretraga" HorizontalAlignment="Left" Margin="23,74,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

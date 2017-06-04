@@ -10,31 +10,19 @@ namespace HCIprojekat.model
     {
         private int id;
         private string naziv;
-        private int boja;
+        private string boja;
         public Etiketa()
         {
 
         }
 
-        public Etiketa(int id, string naziv, int boja)
+        public Etiketa(string naziv, string boja)
         {
-            this.id = id;
             this.naziv = naziv;
-            this.boja = boja;
+            this.Boja = boja;
         }
 
-        public int Boja
-        {
-            get
-            {
-                return boja;
-            }
-
-            set
-            {
-                boja = value;
-            }
-        }
+        
 
         public string Naziv
         {
@@ -52,7 +40,7 @@ namespace HCIprojekat.model
         public string ToString()
         {
 
-            return id + " " + naziv + " " + boja;
+            return id + " " + naziv + " " + Boja;
         }
         public int Id
         {
@@ -66,5 +54,7 @@ namespace HCIprojekat.model
                 id = value;
             }
         }
+
+        public string Boja { get => boja; set => boja = value; }
     }
 }

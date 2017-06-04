@@ -23,7 +23,7 @@ namespace HCIprojekat
     {
         BitmapImage img;
         MySql.Data.MySqlClient.MySqlConnection conn;
-        String myConnectionString = "server=localhost;uid=root;" + "pwd=admin;database=hci;";
+        String myConnectionString = "server=localhost;uid=root;" + "pwd=root;database=hci;";
         TipVrstaDao dao = new TipVrstaDao();
         public DodajTip()
         {
@@ -63,7 +63,15 @@ namespace HCIprojekat
         {
             try
             {
-                addTipVrsta(textBoxIme.Text, textBoxOpis.Text, image.Source.ToString());
+                if (tipVrsta == null)
+                {
+                    addTipVrsta(textBoxIme.Text, textBoxOpis.Text, image.Source.ToString());
+                }
+                else
+                {
+                    MessageBox.Show("Sad treba da se apdjetuje!");
+                }
+                cancel();
                 upadteGrid();
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
@@ -72,7 +80,7 @@ namespace HCIprojekat
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Popunite sva polja");
+                //MessageBox.Show("Popunite sva polja");
             }
 
         }
@@ -119,7 +127,8 @@ namespace HCIprojekat
             textBoxOpis.Text = "";
             dataGrid.SelectedItem = null;
             img = null;
-            image = new Image();
+            image.Source = null;
+            tipVrsta = null;
         }
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
         {
@@ -128,6 +137,7 @@ namespace HCIprojekat
             {
                 try{
                     dao.deleteTipOnly(tipVrsta.Id);
+                    cancel();
                 }catch(Exception ex)
                 {
                     deleteWarnning(tipVrsta.Id);
@@ -147,8 +157,14 @@ namespace HCIprojekat
         TipVrsta tipVrsta;
         private void dataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            tipVrsta = (TipVrsta)dataGrid.SelectedItem;
-            
+            if (dataGrid.SelectedItem != null)
+            {
+                tipVrsta = (TipVrsta)dataGrid.SelectedItem;
+                textBoxIme.Text = tipVrsta.Ime;
+                textBoxOpis.Text = tipVrsta.Opis;
+                image.Source = new BitmapImage(new Uri(tipVrsta.Ikonica));
+            }
+
         }
     }
 }

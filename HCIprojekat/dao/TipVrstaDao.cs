@@ -11,7 +11,7 @@ namespace HCIprojekat.dao
     class TipVrstaDao
     {
         MySql.Data.MySqlClient.MySqlConnection conn;
-        String myConnectionString = "server=localhost;uid=root;" + "pwd=admin;database=hci;";
+        String myConnectionString = "server=localhost;uid=root;" + "pwd=root;database=hci;";
         public List<TipVrsta> readTipVrsta()
         {
             List<TipVrsta> retVal = new List<TipVrsta>();
@@ -34,6 +34,26 @@ namespace HCIprojekat.dao
             conn.Close();
             return retVal;
         }
+
+        public TipVrsta getById(int id)
+        {
+            TipVrsta tipVrsta = new TipVrsta();
+            conn = new MySql.Data.MySqlClient.MySqlConnection(myConnectionString);
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand("select * from tip_vrsta where id =" + id, conn);
+
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
+            {
+                tipVrsta.Id = Int32.Parse(reader["id"].ToString());
+                tipVrsta.Ime = reader["ime"].ToString();
+                tipVrsta.Opis = reader["opis"].ToString();
+                tipVrsta.Ikonica = reader["ikonica"].ToString();
+            }
+            return tipVrsta;
+        }
+
         public void deleteTipOnly(int id)
         {
             conn = new MySql.Data.MySqlClient.MySqlConnection(myConnectionString);

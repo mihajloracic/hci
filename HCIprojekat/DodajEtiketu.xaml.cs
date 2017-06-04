@@ -64,12 +64,7 @@ namespace HCIprojekat
             }else
             {
                 etiketa = (Etiketa)dataGrid.SelectedItem;
-                if (!dao.checkDelete(etiketa.Id))
-                {
-                    delteWarrning();
-                    updateDataGrid();
-                    return;
-                }
+               
                 dao.delete(etiketa.Id);
                 
             }
@@ -89,12 +84,12 @@ namespace HCIprojekat
             switch (rsltMessageBox)
             {
                 case MessageBoxResult.Yes:
-                    dao.deleteEtiketaOnly(etiketa.Id);
+                    
                     /* ... */
                     break;
 
                 case MessageBoxResult.No:
-                    dao.delete(etiketa.Id);
+                 
                     /* ... */
                     break;
 
@@ -133,46 +128,22 @@ namespace HCIprojekat
             {
                 return;
             }
-            bool update = false;
-            if (etiketa == null)
+            if(etiketa == null)
             {
-                etiketa = new Etiketa();
-                update = true;
-            }
-            try
-            {
-                etiketa.Boja = Int32.Parse(textBoxBoja.Text.ToString());
-                return;
-            }
-            
-            catch (Exception ex)
-            {
-                MessageBox.Show("Molimo unesite boju");
-            }
-            etiketa.Naziv = textBoxNaziv.Text.ToString();
-            if (update)
-            {
-
-                dao.insert(etiketa);
+                dao.insert(new Etiketa(textBoxNaziv.Text, textBoxBoja.Text));
             }
             else
             {
-                if (!dao.checkDelete(etiketa.Id))
-                {
-                    updateWarning(etiketa);
-                    updateDataGrid();
-                    return;
-                }else
-                {
-                    dao.update(etiketa);
-                }
+                etiketa.Naziv = textBoxNaziv.Text;
+                etiketa.Boja = textBoxBoja.Text;
+                dao.update(etiketa);
             }
             updateDataGrid();
         }
         public void cancel()
         {
             textBoxNaziv.Text = "";
-            textBoxBoja.Text = null;
+            textBoxBoja.Text = "";
             this.etiketa = null;
         }
 

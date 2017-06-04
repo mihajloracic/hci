@@ -57,3 +57,5 @@ C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\ro\Xceed.Wpf.AvalonDo
 C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketaVrsta.g.cs
+C:\Users\mihajlo\Desktop\HCIprojekat\HCIprojekat\obj\Debug\DodajEtiketaVrsta.baml

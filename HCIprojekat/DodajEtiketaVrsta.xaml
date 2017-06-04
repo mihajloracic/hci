@@ -1,0 +1,18 @@
+﻿<Window x:Class="HCIprojekat.DodajEtiketaVrsta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCIprojekat"
+        mc:Ignorable="d"
+        Title="DodajEtiketaVrsta" Height="600" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="201" Margin="0,358,0,0" VerticalAlignment="Top" Width="782" SelectionChanged="dataGrid_SelectionChanged"/>
+        <DataGrid x:Name="dataGridEtiketa" HorizontalAlignment="Left" Height="280" Margin="0,10,0,0" VerticalAlignment="Top" Width="244" SelectionChanged="dataGridEtiketa_SelectionChanged"/>
+        <DataGrid x:Name="dataGridVrsta" HorizontalAlignment="Left" Height="283" Margin="249,7,0,0" VerticalAlignment="Top" Width="533" SelectionChanged="dataGridVrsta_SelectionChanged"/>
+        <Button x:Name="buttoAdd" Content="Dodaj" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="234" Height="63" Click="buttoAdd_Click"/>
+        <Button x:Name="buttonDelete" Content="Izbriši" HorizontalAlignment="Left" Margin="249,295,0,0" VerticalAlignment="Top" Width="241" Height="58" Click="buttonDelete_Click"/>
+        <Button x:Name="buttonCancel" Content="Poništi" HorizontalAlignment="Left" Margin="495,295,0,0" VerticalAlignment="Top" Width="287" Height="58" Click="buttonCancel_Click"/>
+
+    </Grid>
+</Window>
