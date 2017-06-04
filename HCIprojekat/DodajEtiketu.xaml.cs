@@ -45,13 +45,11 @@ namespace HCIprojekat
             {
                 etiketa = (Etiketa)dataGrid.SelectedItem;
                 Console.WriteLine(etiketa.ToString());
-                textBoxBoja.Text = etiketa.Boja.ToString();
                 textBoxNaziv.Text = etiketa.Naziv;
             }
             catch (Exception er)
             {
                 Console.Write(er.ToString());
-                textBoxBoja.Text = "0";
                 textBoxNaziv.Text = "";
             }
         }
@@ -124,18 +122,18 @@ namespace HCIprojekat
         }
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if (textBoxBoja.Text == "" || textBoxNaziv.Text == "")
+            if (bojaBirac.SelectedColor.Value.ToString() == "" || textBoxNaziv.Text == "")
             {
                 return;
             }
             if(etiketa == null)
             {
-                dao.insert(new Etiketa(textBoxNaziv.Text, textBoxBoja.Text));
+                dao.insert(new Etiketa(textBoxNaziv.Text, bojaBirac.SelectedColor.Value.ToString()));
             }
             else
             {
                 etiketa.Naziv = textBoxNaziv.Text;
-                etiketa.Boja = textBoxBoja.Text;
+                etiketa.Boja = bojaBirac.SelectedColor.Value.ToString();
                 dao.update(etiketa);
             }
             updateDataGrid();
@@ -143,7 +141,6 @@ namespace HCIprojekat
         public void cancel()
         {
             textBoxNaziv.Text = "";
-            textBoxBoja.Text = "";
             this.etiketa = null;
         }
 

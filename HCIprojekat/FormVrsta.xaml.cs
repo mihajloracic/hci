@@ -63,7 +63,7 @@ namespace HCIprojekat
             dao = new VrstaDao();
             try
             {
-                upadteGrid();
+                updateGrid();
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
@@ -118,7 +118,7 @@ namespace HCIprojekat
                 conn.Close();
             }
         }
-        private void upadteGrid()
+        private void updateGrid()
         {
             updateTipVrste();
 
@@ -152,15 +152,18 @@ namespace HCIprojekat
                     comboBoxTuristickiStatus.Text,//turiticki status
                     checkboxUseParent.IsChecked == true ? 1 : 0);//flag za sliku
                     string path = ((BitmapImage)image.Source).UriSource.AbsolutePath;
-                    ((MainWindow)parent).dodajSliku(path, 1);
+                    List<Vrsta> pomocnaLista = dao.readVrsta();
+                    Vrsta vp = pomocnaLista.ElementAt(pomocnaLista.Count - 1);
+                    ((MainWindow)parent).dodajSliku(vp);
 
                 }
                 else
                 {
-                    MessageBox.Show("Treba da se izmeni!");
+                    vrsta.Slika = image.Source.ToString();
+                    dao.update(vrsta);
                 }
                 //turisticki_status
-                upadteGrid();
+                updateGrid();
                 cancel();
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
@@ -170,7 +173,7 @@ namespace HCIprojekat
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-//                MessageBox.Show("Molimo popunite sve vrednosti");
+                MessageBox.Show("Molimo popunite sve vrednosti");
             }
             
         }
@@ -228,7 +231,7 @@ namespace HCIprojekat
         {
             dao.deleteVrsta(vrsta.Id);
             cancel();
-            upadteGrid();
+            updateGrid();
         }
         double cena=0;
         public double Cena

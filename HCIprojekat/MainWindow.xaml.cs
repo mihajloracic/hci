@@ -24,10 +24,17 @@ namespace HCIprojekat
         VrstaDao dao;
         Vrsta vrsta;
         Point startPoint = new Point();
+
+        public static List<Vrsta> listaVrsta = new List<Vrsta>();
+
+        public static Dictionary<int, Canvas> skladiste = new Dictionary<int,Canvas>();
+
         public MainWindow()
         {
             InitializeComponent();
             dao = new VrstaDao();
+            listaVrsta = dao.readVrsta();
+            ucitajMapu();
             //image.Source = new BitmapImage(new Uri("C:\\Users\\mihajlo\\Desktop\\HCIprojekat\\pictures\\Simple_world_map.svg"));
         }
 
@@ -66,6 +73,7 @@ namespace HCIprojekat
         {
             FormVrsta formVrsta = new FormVrsta(this);
             formVrsta.ShowDialog();
+            ucitajMapu();
         }
 
         private void menuItemVrsta1_Click(object sender, RoutedEventArgs e)
@@ -107,22 +115,26 @@ namespace HCIprojekat
             }
         }
 
-        internal void dodajSliku(string slika, int id)
+        internal void dodajSliku(Vrsta vrsta)
         {
             ImageBrush image = new ImageBrush();
-            image.ImageSource = new BitmapImage(new Uri(slika, UriKind.Relative));
+            image.ImageSource = new BitmapImage(new Uri(vrsta.Slika, UriKind.Absolute));
 
             Canvas c1 = new Canvas();
             c1.Background = image;
             c1.Width = 25;
             c1.Height = 25;
 
-            //skladiste.Add(id, c1);
+            skladiste.Add(vrsta.Id, c1);
 
             Random r = new Random();
             double y = r.NextDouble() * (mapa.Height - 230);
             double x = r.NextDouble() * (mapa.Width - 230);
 
+            vrsta.X = x;
+            vrsta.Y = y;
+
+            dao.update(vrsta);
 
             Canvas.SetTop(c1, y);
             Canvas.SetLeft(c1, x);
@@ -156,6 +168,23 @@ namespace HCIprojekat
             {
                 mapa.ReleaseMouseCapture();
                 Panel.SetZIndex(draggedImage, 0);
+                listaVrsta = dao.readVrsta();
+                int id = skladiste.FirstOrDefault(x => x.Value == draggedImage).Key;
+
+
+
+                foreach (Vrsta r in listaVrsta)
+                {
+                    if (r.Id == id)
+                    {
+                        r.X = Canvas.GetLeft(draggedImage);
+                        r.Y = Canvas.GetTop(draggedImage);
+                        dao.update(r);
+                        break;
+                    }
+                }
+                
+
                 draggedImage = null;
             }
         }
@@ -188,6 +217,40 @@ namespace HCIprojekat
 
 
             }
+        }
+        public void ucitajMapu()
+        {
+
+            skladiste.Clear();
+            listaVrsta = dao.readVrsta();
+            mapa.Children.Clear();
+            foreach (Vrsta r in listaVrsta)
+            {
+
+                ImageBrush image = new ImageBrush();
+                image.ImageSource = new BitmapImage(new Uri(r.Slika, UriKind.Absolute));
+
+                Canvas c1 = new Canvas();
+                c1.Background = image;
+                c1.Width = 25;
+                c1.Height = 25;
+
+                c1.AllowDrop = true;
+
+                Canvas.SetTop(c1, r.Y);
+                Canvas.SetLeft(c1, r.X);
+
+                mapa.Children.Add(c1);
+
+
+                skladiste.Add(r.Id, c1);
+            }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ucitajMapu();
         }
     }
 }

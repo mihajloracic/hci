@@ -22,7 +22,19 @@ namespace HCIprojekat.model
            
         public void update(Vrsta vrsta)
         {
-
+            string command = "UPDATE vrsta SET ";
+            command += "x = " + vrsta.X + ",";
+            command += "y = " + vrsta.Y + ",";
+            command += "tip_vrste = " + vrsta.TipVrsta.Id + ",";
+            command += "naziv = \"" + vrsta.Naziv + "\",";
+            command += "opis = \"" + vrsta.Opis + "\",";
+            command += "slika = \"" + vrsta.Slika + "\"";
+            command += " where id = " + vrsta.Id;
+            conn = new MySql.Data.MySqlClient.MySqlConnection(myConnectionString);
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(command, conn);
+            cmd.ExecuteReader();
+            conn.Close();
         }
 
         public List<Vrsta> readVrsta()
@@ -39,6 +51,8 @@ namespace HCIprojekat.model
             {
                 Vrsta vrsta = new Vrsta();
                 vrsta.Id = Int32.Parse(reader["id"].ToString());
+                vrsta.X = Double.Parse(reader["x"].ToString());
+                vrsta.Y = Double.Parse(reader["y"].ToString());
                 vrsta.Naziv = reader["naziv"].ToString();
                 vrsta.Opis = reader["opis"].ToString();               
                 vrsta.TipVrsta = dao.getById(Int32.Parse(reader["tip_vrste"].ToString()));

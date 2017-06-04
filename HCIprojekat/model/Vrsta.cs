@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HCIprojekat.model
 {
-    class Vrsta
+    public class Vrsta
     {
         int id;
         string naziv;
@@ -19,10 +19,12 @@ namespace HCIprojekat.model
         bool iucn_lista;
         string turisticki_status;
         bool koristiRoditeljSliku;
-
+        double x;
+        double y;
         public Vrsta()
         {
-
+            this.x = 0;
+            this.y = 0;
         }
 
         
@@ -37,6 +39,8 @@ namespace HCIprojekat.model
         public bool Iucn_lista { get => iucn_lista; set => iucn_lista = value; }
         public string Turisticki_status { get => turisticki_status; set => turisticki_status = value; }
         public bool KoristiRoditeljSliku { get => koristiRoditeljSliku; set => koristiRoditeljSliku = value; }
+        public double X { get => x; set => x = value; }
+        public double Y { get => y; set => y = value; }
         internal TipVrsta TipVrsta { get => tipVrsta; set => tipVrsta = value; }
     }
 }
